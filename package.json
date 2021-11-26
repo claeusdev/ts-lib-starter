@@ -1,0 +1,31 @@
+{
+  "name": "ts-lib",
+  "version": "1.0.0",
+  "description": "simple TS library",
+  "main": "index.js",
+  "author": "Nana Adjei Manu",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.10",
+    "jest": "^27.3.1",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {},
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "jest",
+    "test:watch": "yarn test -- --watchAll"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transformers": {
+      ".ts": "<rootDir>/node_modules/ts-jest/preprocessor"
+    },
+    "testRegex": ".*\\.spec\\.ts$"
+  }
+}
