@@ -1,2 +1,4 @@
-console.log("random");
-module.exports = {};
+console.log(
+  "random things are happening in the world that we currently live in"
+);
+export default {};
