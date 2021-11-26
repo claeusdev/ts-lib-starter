@@ -24,7 +24,8 @@
     "test:watch": "yarn test -- --watchAll",
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable"
+    "postpublish": "pinst --enable",
+    "prepare": "husky install"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -35,5 +36,8 @@
       ".ts": "<rootDir>/node_modules/ts-jest/preprocessor"
     },
     "testRegex": ".*\\.spec\\.ts$"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
   }
 }
