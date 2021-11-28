@@ -1,8 +1,10 @@
 TN:
 SF:src/index.ts
-FNF:0
-FNH:0
-DA:1,1
+FN:1,isBoolean
+FNF:1
+FNH:1
+FNDA:6,isBoolean
+DA:2,6
 LF:1
 LH:1
 BRF:0

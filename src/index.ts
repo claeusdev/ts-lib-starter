@@ -1,4 +1,7 @@
-console.log(
-  "random things are happening in the world that we currently live in"
-);
-export default {};
+export function isBoolean(value: any): boolean {
+  return typeof value === "boolean";
+}
+
+export default {
+  isBoolean,
+};

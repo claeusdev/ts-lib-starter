@@ -1,10 +1,13 @@
 {
-  "name": "ts-lib",
-  "version": "1.0.0",
+  "name": "ts-pro-lib",
+  "version": "1.1.0",
   "description": "simple TS library",
-  "main": "index.js",
+  "main": "build/index.umd.js",
   "author": "Nana Adjei Manu",
   "license": "MIT",
+  "files": [
+    "build"
+  ],
   "private": false,
   "devDependencies": {
     "@babel/core": "^7.16.0",
@@ -20,16 +23,20 @@
     "prettier": "^2.5.0",
     "ts-jest": "^27.0.7",
     "ts-node": "^10.4.0",
-    "typescript": "^4.5.2"
+    "typescript": "^4.5.2",
+    "rollup": "^2.60.1",
+    "rollup-plugin-sourcemaps": "^0.6.3"
   },
   "dependencies": {},
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && rollup -c rollup.config.js",
     "test": "jest",
     "test:watch": "yarn test -- --watchAll",
+    "prebuild": "rm -rf dist && rm -rf build",
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable"
+    "postpublish": "pinst --enable",
+    "postbuild": "cp dist/*.d.ts build/"
   },
   "lint-staged": {
     "src/**/*.ts": [
