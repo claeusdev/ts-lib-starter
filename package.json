@@ -1,6 +1,6 @@
 {
   "name": "ts-pro-lib",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "simple TS library",
   "main": "build/index.umd.js",
   "author": "Nana Adjei Manu",
@@ -22,11 +22,11 @@
     "lint-staged": "^12.1.2",
     "pinst": "^2.1.6",
     "prettier": "^2.5.0",
+    "rollup": "^2.60.1",
+    "rollup-plugin-sourcemaps": "^0.6.3",
     "ts-jest": "^27.0.7",
     "ts-node": "^10.4.0",
-    "typescript": "^4.5.2",
-    "rollup": "^2.60.1",
-    "rollup-plugin-sourcemaps": "^0.6.3"
+    "typescript": "^4.5.2"
   },
   "dependencies": {},
   "scripts": {
