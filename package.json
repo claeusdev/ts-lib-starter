@@ -8,6 +8,7 @@
   "files": [
     "build"
   ],
+  "typings": "build/index.d.ts",
   "private": false,
   "devDependencies": {
     "@babel/core": "^7.16.0",
