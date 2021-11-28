@@ -35,8 +35,7 @@
     "prebuild": "rm -rf dist && rm -rf build",
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable",
-    "postbuild": "cp dist/*.d.ts build/"
+    "postpublish": "pinst --enable"
   },
   "lint-staged": {
     "src/**/*.ts": [
