@@ -18,7 +18,17 @@ export default {
 
   // Indicates whether the coverage information should be collected while executing the test
   collectCoverage: true,
-
+  collectCoverageFrom: [
+    "src/**/*.ts" 
+  ],
+  coverageThreshold: {
+    "global": {
+      "branches": 100,
+      "functions": 100,
+      "lines": 100,
+      "statements": 100
+    }
+  },
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   // collectCoverageFrom: undefined,
 
